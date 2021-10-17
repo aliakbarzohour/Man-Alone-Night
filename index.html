@@ -16,12 +16,19 @@
     }
     
     body {
-        background: #272a35;
         display: flex;
         min-height: 100vh;
     }
     
     .container {
+        display: flex;
+        min-height: 100vh;
+        width: 100%;
+        background: #272a35;
+        position: relative;
+    }
+    
+    .char {
         margin: auto;
         width: 300px;
         height: 300px;
@@ -29,7 +36,6 @@
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        position: relative;
     }
     
     .headchar {
@@ -132,15 +138,18 @@
             width: 100px;
         }
     }
+
 </style>
 
 <body>
     <div class="container">
-        <div class="headchar"></div>
-        <div class="bodychar"></div>
-        <div class="firstleg"></div>
-        <div class="secondleg"></div>
-        <div class="shadowleg"></div>
+        <div class="char">
+            <div class="headchar"></div>
+            <div class="bodychar"></div>
+            <div class="firstleg"></div>
+            <div class="secondleg"></div>
+            <div class="shadowleg"></div>
+        </div>
     </div>
 </body>
 
