@@ -9,7 +9,71 @@
 </head>
 <!-- add a style tag for css  -->
 <style>
-
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background: #333745;
+        display: flex;
+    }
+    
+    .container {
+        margin: auto;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+    }
+    
+    .headchar {
+        width: 50px;
+        height: 50px;
+        background: white;
+        border-radius: 50%;
+        position: relative;
+        top: 20px;
+        left: 35px;
+        animation: headchange 1s infinite 1.6s ease-in;
+    }
+    
+    .bodychar {
+        width: 40px;
+        height: 100px;
+        border-radius: 60px 10px 0 0;
+        background: white;
+        animation: bodychange 1s infinite 1.6s ease-in;
+    }
+    
+    .firstleg,
+    .secondleg {
+        width: 35px;
+        height: 10px;
+        background-color: white;
+        border-radius: 20px 50px 50px 20px;
+        position: relative;
+        top: 55px;
+        left: 20px;
+        animation: walk 2s infinite linear;
+    }
+    
+    .secondleg {
+        top: 25px;
+        animation-delay: 1s;
+    }
+    
+    .shadowleg {
+        border-radius: 50%;
+        background: #575555e8;
+        width: 100px;
+        height: 10px;
+        animation: shadowchange 1s infinite 1.6s ease-in;
+    }
 </style>
 
 <body>
