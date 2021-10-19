@@ -26,6 +26,7 @@
         width: 100%;
         background: #272a35;
         position: relative;
+        transition: .6s;
     }
     
     .char {
@@ -138,7 +139,11 @@
             width: 100px;
         }
     }
-
+    
+    .loaded {
+        opacity: 0;
+        visibility: hidden;
+    }
 </style>
 
 <body>
@@ -151,6 +156,12 @@
             <div class="shadowleg"></div>
         </div>
     </div>
+
+    <script>
+        window.addEventListener("load", function() {
+            document.querySelector(".container").classList.add(".loaded");
+        });
+    </script>
 </body>
 
 </html>
