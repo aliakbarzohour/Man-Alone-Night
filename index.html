@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Man-Alone-Night</title>
 </head>
-<!-- add a style tag for css  -->
+<!-- add a style tag for css -->
 <style>
     * {
         margin: 0;
@@ -139,11 +139,12 @@
             width: 100px;
         }
     }
-    
-    .loaded {
+    /* Add these features to make the loading page disappear after the website is fully loaded */
+    /* .loaded {
         opacity: 0;
         visibility: hidden;
     }
+    */
 </style>
 
 <body>
@@ -156,11 +157,11 @@
             <div class="shadowleg"></div>
         </div>
     </div>
-
     <script>
-        window.addEventListener("load", function() {
-            document.querySelector(".container").classList.add(".loaded");
-        });
+        // Add these features to make the loading page disappear after the website is fully loaded
+        //window.addEventListener("load", function() {
+        //    document.querySelector(".container").classList.add(".loaded");
+        //});
     </script>
 </body>
 
